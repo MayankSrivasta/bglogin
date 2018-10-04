@@ -1,0 +1,44 @@
+<acceptance-test-run title="Customer login into his account with valid credentials" name="Customer login into his account with valid credentials" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="31315" timestamp="2018-10-04T11:47:17.161+05:30" session-id="7b4d659fbca727716e4946723e941b45">
+  <user-story id="login" name="Login" path="stories/Login_Logout/login.story"/>
+  <tags>
+    <tag name="Login logout" type="feature"/>
+    <tag name="Login logout/Login" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>validEmail</header>
+      <header></header>
+      <header>validPassword</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>BGE123_0.rulez@gmx.net</value>
+        <value></value>
+        <value>password</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {validEmail=BGE123_0.rulez@gmx.net, =, validPassword=password, login=}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="21936">
+      <screenshots>
+        <screenshot image="9fac41cfcd4a5103c171002cf8e44bbf.png"/>
+      </screenshots>
+      <description>Given Bob, a customer</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5462">
+      <screenshots>
+        <screenshot image="a4797a810d4f8e983c8de9031745c836.png"/>
+      </screenshots>
+      <description>When Bob, logs into his BGE account with {BGE123_0.rulez@gmx.net} and {password}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3770">
+      <screenshots>
+        <screenshot image="e472079e7b7c1e17bd612ea2889285d3.png"/>
+      </screenshots>
+      <description>Then Bob, should see his BGE account Dashboard</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

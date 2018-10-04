@@ -1,0 +1,7 @@
+#org.jbehave.core.embedder.StoryManager
+#Thu Oct 04 11:48:42 IST 2018
+stories/Login_Logout/login.story=49000
+threads=1
+total=84000
+stories/Login_Logout/logout.story=35000
+threadAverage=84000

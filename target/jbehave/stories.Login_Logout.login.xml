@@ -1,0 +1,46 @@
+<story path="stories/Login_Logout/login.story" title="">
+<scenario keyword="Scenario:" title="Customer login into his account with valid credentials">
+<examples keyword="Examples:">
+<step>Given Bob, a customer</step>
+<step>When Bob, logs into his BGE account with &lt;validEmail&gt; and &lt;validPassword&gt;</step>
+<step>Then Bob, should see his BGE account Dashboard</step>
+<parameters>
+<names><name>validEmail</name><name></name><name>validPassword</name></names>
+<values><value>BGE123_0.rulez@gmx.net</value><value></value><value>password</value></values>
+</parameters>
+
+<example keyword="Example:">{validEmail=BGE123_0.rulez@gmx.net, =, validPassword=password, login=}</example>
+<step outcome="successful">Given Bob, a customer</step>
+<step outcome="successful">When Bob, logs into his BGE account with <parameter>BGE123_0.rulez@gmx.net</parameter> and <parameter>password</parameter></step>
+<step outcome="successful">Then Bob, should see his BGE account Dashboard</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="Customer should not login to their account with incorrect credentials">
+<examples keyword="Examples:">
+<step>Given Bob, is a BGE customer</step>
+<step>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and &lt;invalidPassword&gt;</step>
+<step>Then Bob should see the error message as Incorrect username/password</step>
+<step>When Bob, logs into his BGE account with &lt;validEmail&gt; and  &lt;invalidPassword&gt;</step>
+<step>Then Bob should see the error message as Incorrect username/password.</step>
+<step>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and  &lt;validPassword&gt;</step>
+<step>Then Bob should see the error message as Incorrect username/password.</step>
+<step>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</step>
+<step>Then Bob, should see the error message as Please enter your email and Please enter your password</step>
+<parameters>
+<names><name>invalidEmail</name><name></name><name>invalidPassword</name><name></name><name>validEmail</name><name></name><name>validPassword</name></names>
+<values><value>mayank@bordgais.ie</value><value></value><value>mayank</value><value></value><value>BGE123_0.rulez@gmx.net</value><value></value><value>password</value></values>
+</parameters>
+
+<example keyword="Example:">{invalidEmail=mayank@bordgais.ie, =, invalidPassword=mayank, validEmail=BGE123_0.rulez@gmx.net, validPassword=password, login=}</example>
+<step outcome="successful">Given Bob, is a BGE customer</step>
+<step outcome="successful">When Bob, logs into his BGE account with <parameter>mayank@bordgais.ie</parameter> and <parameter>mayank</parameter></step>
+<step outcome="successful">Then Bob should see the error message as Incorrect username/password</step>
+<step outcome="successful">When Bob, logs into his BGE account with <parameter>BGE123_0.rulez@gmx.net</parameter> and  <parameter>mayank</parameter></step>
+<step outcome="successful">Then Bob should see the error message as Incorrect username/password.</step>
+<step outcome="successful">When Bob, logs into his BGE account with <parameter>mayank@bordgais.ie</parameter> and  <parameter>password</parameter></step>
+<step outcome="successful">Then Bob should see the error message as Incorrect username/password.</step>
+<step outcome="successful">When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</step>
+<step outcome="successful">Then Bob, should see the error message as Please enter your email and Please enter your password</step>
+</examples>
+</scenario>
+</story>

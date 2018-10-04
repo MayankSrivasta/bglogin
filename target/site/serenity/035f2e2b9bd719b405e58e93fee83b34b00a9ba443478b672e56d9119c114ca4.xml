@@ -1,0 +1,44 @@
+<acceptance-test-run title="Customer logging out of their Bord Gais online account" name="Customer logging out of their Bord Gais online account" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8243" timestamp="2018-10-04T11:48:33.637+05:30" session-id="6a054a072c4f3bc722be9d7e16408cc8">
+  <user-story id="logout" name="Logout" path="stories/Login_Logout/logout.story"/>
+  <tags>
+    <tag name="Login logout" type="feature"/>
+    <tag name="Login logout/Logout" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>validEmail</header>
+      <header></header>
+      <header>validPassword</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>BGE123_0.rulez@gmx.net</value>
+        <value></value>
+        <value>password</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {validEmail=BGE123_0.rulez@gmx.net, =, validPassword=password, logout=}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3466">
+      <screenshots>
+        <screenshot image="80e545bf1f867dcf544bb2855b8c2fa7.png"/>
+      </screenshots>
+      <description>Given Bob, logged into his account with {BGE123_0.rulez@gmx.net} and {password}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4108">
+      <screenshots>
+        <screenshot image="580e202eebd6b025bd7564424d90d877.png"/>
+      </screenshots>
+      <description>When Bob, logs out of his account</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="663">
+      <screenshots>
+        <screenshot image="ba9171cd0f0bf31c426c026d1645b14b.png"/>
+      </screenshots>
+      <description>Then Bob, should be logged out of his BGE online account</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

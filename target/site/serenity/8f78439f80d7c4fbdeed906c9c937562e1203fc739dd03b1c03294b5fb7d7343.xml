@@ -1,0 +1,88 @@
+<acceptance-test-run title="Customer should not login to their account with incorrect credentials" name="Customer should not login to their account with incorrect credentials" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="16787" timestamp="2018-10-04T11:47:48.748+05:30" session-id="7b4d659fbca727716e4946723e941b45">
+  <user-story id="login" name="Login" path="stories/Login_Logout/login.story"/>
+  <tags>
+    <tag name="Login logout" type="feature"/>
+    <tag name="Login logout/Login" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>invalidEmail</header>
+      <header></header>
+      <header>invalidPassword</header>
+      <header></header>
+      <header>validEmail</header>
+      <header></header>
+      <header>validPassword</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>mayank@bordgais.ie</value>
+        <value></value>
+        <value>mayank</value>
+        <value></value>
+        <value>BGE123_0.rulez@gmx.net</value>
+        <value></value>
+        <value>password</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {invalidEmail=mayank@bordgais.ie, =, invalidPassword=mayank, validEmail=BGE123_0.rulez@gmx.net, validPassword=password, login=}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3209">
+      <screenshots>
+        <screenshot image="98b5ad5430809849997b01be77258ef2.png"/>
+      </screenshots>
+      <description>Given Bob, is a BGE customer</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1953">
+      <screenshots>
+        <screenshot image="a5cbca3a0e14566e42abfe70fff5ba79.png"/>
+      </screenshots>
+      <description>When Bob, logs into his BGE account with {mayank@bordgais.ie} and {mayank}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="601">
+      <screenshots>
+        <screenshot image="52b10364f44bd56ce958f8c7f927964c.png"/>
+      </screenshots>
+      <description>Then Bob should see the error message as Incorrect username/password</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3029">
+      <screenshots>
+        <screenshot image="f930e432d068bb7496268e0343d9821d.png"/>
+      </screenshots>
+      <description>When Bob, logs into his BGE account with {BGE123_0.rulez@gmx.net} and  {mayank}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="501">
+      <screenshots>
+        <screenshot image="0d6fc3d54b6e3eca47505c156b59d0de.png"/>
+      </screenshots>
+      <description>Then Bob should see the error message as Incorrect username/password.</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3194">
+      <screenshots>
+        <screenshot image="c46c8ee31a223d13ac295fb282c813b6.png"/>
+      </screenshots>
+      <description>When Bob, logs into his BGE account with {mayank@bordgais.ie} and  {password}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="724">
+      <screenshots>
+        <screenshot image="8077f0010e857424bd4ddc64505bd744.png"/>
+      </screenshots>
+      <description>Then Bob should see the error message as Incorrect username/password.</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2471">
+      <screenshots>
+        <screenshot image="053105f552d36dd3bb3e7ffaa74d37f3.png"/>
+      </screenshots>
+      <description>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1079">
+      <screenshots>
+        <screenshot image="053105f552d36dd3bb3e7ffaa74d37f3.png"/>
+      </screenshots>
+      <description>Then Bob, should see the error message as Please enter your email and Please enter your password</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

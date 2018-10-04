@@ -1,0 +1,64 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/Login_Logout/login.story</div>
+<div class="scenario">
+<h2>Scenario: Customer login into his account with valid credentials</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Bob, a customer</div>
+<div class="step">When Bob, logs into his BGE account with &lt;validEmail&gt; and &lt;validPassword&gt;</div>
+<div class="step">Then Bob, should see his BGE account Dashboard</div>
+<table>
+<thead>
+<tr>
+<th>validEmail</th><th></th><th>validPassword</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>BGE123_0.rulez@gmx.net</td><td></td><td>password</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {validEmail=BGE123_0.rulez@gmx.net, =, validPassword=password, login=}</h3>
+<div class="step successful">Given Bob, a customer</div>
+<div class="step successful">When Bob, logs into his BGE account with <span class="step parameter">BGE123_0.rulez@gmx.net</span> and <span class="step parameter">password</span></div>
+<div class="step successful">Then Bob, should see his BGE account Dashboard</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Customer should not login to their account with incorrect credentials</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Bob, is a BGE customer</div>
+<div class="step">When Bob, logs into his BGE account with &lt;invalidEmail&gt; and &lt;invalidPassword&gt;</div>
+<div class="step">Then Bob should see the error message as Incorrect username/password</div>
+<div class="step">When Bob, logs into his BGE account with &lt;validEmail&gt; and  &lt;invalidPassword&gt;</div>
+<div class="step">Then Bob should see the error message as Incorrect username/password.</div>
+<div class="step">When Bob, logs into his BGE account with &lt;invalidEmail&gt; and  &lt;validPassword&gt;</div>
+<div class="step">Then Bob should see the error message as Incorrect username/password.</div>
+<div class="step">When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</div>
+<div class="step">Then Bob, should see the error message as Please enter your email and Please enter your password</div>
+<table>
+<thead>
+<tr>
+<th>invalidEmail</th><th></th><th>invalidPassword</th><th></th><th>validEmail</th><th></th><th>validPassword</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mayank@bordgais.ie</td><td></td><td>mayank</td><td></td><td>BGE123_0.rulez@gmx.net</td><td></td><td>password</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {invalidEmail=mayank@bordgais.ie, =, invalidPassword=mayank, validEmail=BGE123_0.rulez@gmx.net, validPassword=password, login=}</h3>
+<div class="step successful">Given Bob, is a BGE customer</div>
+<div class="step successful">When Bob, logs into his BGE account with <span class="step parameter">mayank@bordgais.ie</span> and <span class="step parameter">mayank</span></div>
+<div class="step successful">Then Bob should see the error message as Incorrect username/password</div>
+<div class="step successful">When Bob, logs into his BGE account with <span class="step parameter">BGE123_0.rulez@gmx.net</span> and  <span class="step parameter">mayank</span></div>
+<div class="step successful">Then Bob should see the error message as Incorrect username/password.</div>
+<div class="step successful">When Bob, logs into his BGE account with <span class="step parameter">mayank@bordgais.ie</span> and  <span class="step parameter">password</span></div>
+<div class="step successful">Then Bob should see the error message as Incorrect username/password.</div>
+<div class="step successful">When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</div>
+<div class="step successful">Then Bob, should see the error message as Please enter your email and Please enter your password</div>
+</div>
+</div>
+</div>

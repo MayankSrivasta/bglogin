@@ -1,0 +1,3374 @@
+{"xref": {
+  "stories": [
+    {
+      "story": {
+        "path": "stories/Login_Logout/login.story",
+        "description": {
+          "descriptionAsString": ""
+        },
+        "narrative": {
+          "inOrderTo": "",
+          "asA": "",
+          "iWantTo": "",
+          "soThat": ""
+        },
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "lifecycle": {
+          "before": {
+            "steps": [
+              []
+            ]
+          },
+          "after": []
+        },
+        "scenarios": [
+          {
+            "title": "Customer login into his account with valid credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "login",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "login",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob, a customer",
+              "When Bob, logs into his BGE account with <validEmail> and <validPassword>",
+              "Then Bob, should see his BGE account Dashboard"
+            ]
+          },
+          {
+            "title": "Customer should not login to their account with incorrect credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "login",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|invalidEmail||invalidPassword||validEmail||validPassword|\r\n|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "invalidEmail",
+                "",
+                "invalidPassword",
+                "",
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "invalidEmail",
+                    "mayank@bordgais.ie"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "invalidPassword",
+                    "mayank"
+                  ],
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "login",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob, is a BGE customer",
+              "When Bob, logs into his BGE account with <invalidEmail> and <invalidPassword>",
+              "Then Bob should see the error message as Incorrect username/password",
+              "When Bob, logs into his BGE account with <validEmail> and  <invalidPassword>",
+              "Then Bob should see the error message as Incorrect username/password.",
+              "When Bob, logs into his BGE account with <invalidEmail> and  <validPassword>",
+              "Then Bob should see the error message as Incorrect username/password.",
+              "When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in",
+              "Then Bob, should see the error message as Please enter your email and Please enter your password"
+            ]
+          }
+        ],
+        "name": "login.story"
+      },
+      "localizedNarrative": "As a \nI want to \nSo that ",
+      "allowed": true,
+      "status": "SUCCESSFUL",
+      "givenStories": [],
+      "scenarios": [
+        {
+          "scenario": {
+            "title": "Customer login into his account with valid credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "login",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "login",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob, a customer",
+              "When Bob, logs into his BGE account with <validEmail> and <validPassword>",
+              "Then Bob, should see his BGE account Dashboard"
+            ]
+          },
+          "storyPath": "stories/Login_Logout/login.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "validEmail",
+                  "BGE123_0.rulez@gmx.net"
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "validPassword",
+                  "password"
+                ],
+                [
+                  "login",
+                  ""
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given Bob, a customer",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given Bob, a customer",
+                    "durationInMillis": 21239
+                  },
+                  {
+                    "step": "When Bob, logs into his BGE account with <validEmail> and <validPassword>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When Bob, logs into his BGE account with ?BGE123_0.rulez@gmx.net? and ?password?",
+                    "durationInMillis": 5016
+                  },
+                  {
+                    "step": "Then Bob, should see his BGE account Dashboard",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then Bob, should see his BGE account Dashboard",
+                    "durationInMillis": 3403
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": [
+                  {
+                    "@name": "login",
+                    "@value": ""
+                  }
+                ]
+              },
+              "scenario": {
+                "title": "Customer login into his account with valid credentials",
+                "meta": {
+                  "properties": [
+                    {
+                      "@name": "login",
+                      "@value": ""
+                    }
+                  ]
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "headerSeparator": "|",
+                    "valueSeparator": "|",
+                    "ignorableSeparator": "|--",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ],
+                    "propertiesAsString": "",
+                    "namedParameters": [],
+                    "trim": true
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "validEmail",
+                    "",
+                    "validPassword"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "validEmail",
+                        "BGE123_0.rulez@gmx.net"
+                      ],
+                      [
+                        "",
+                        ""
+                      ],
+                      [
+                        "validPassword",
+                        "password"
+                      ],
+                      [
+                        "login",
+                        ""
+                      ]
+                    ]
+                  ],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                },
+                "steps": [
+                  "Given Bob, a customer",
+                  "When Bob, logs into his BGE account with <validEmail> and <validPassword>",
+                  "Then Bob, should see his BGE account Dashboard"
+                ]
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "Customer should not login to their account with incorrect credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "login",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|invalidEmail||invalidPassword||validEmail||validPassword|\r\n|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "invalidEmail",
+                "",
+                "invalidPassword",
+                "",
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "invalidEmail",
+                    "mayank@bordgais.ie"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "invalidPassword",
+                    "mayank"
+                  ],
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "login",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob, is a BGE customer",
+              "When Bob, logs into his BGE account with <invalidEmail> and <invalidPassword>",
+              "Then Bob should see the error message as Incorrect username/password",
+              "When Bob, logs into his BGE account with <validEmail> and  <invalidPassword>",
+              "Then Bob should see the error message as Incorrect username/password.",
+              "When Bob, logs into his BGE account with <invalidEmail> and  <validPassword>",
+              "Then Bob should see the error message as Incorrect username/password.",
+              "When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in",
+              "Then Bob, should see the error message as Please enter your email and Please enter your password"
+            ]
+          },
+          "storyPath": "stories/Login_Logout/login.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "invalidEmail",
+                  "mayank@bordgais.ie"
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "invalidPassword",
+                  "mayank"
+                ],
+                [
+                  "validEmail",
+                  "BGE123_0.rulez@gmx.net"
+                ],
+                [
+                  "validPassword",
+                  "password"
+                ],
+                [
+                  "login",
+                  ""
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given Bob, is a BGE customer",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given Bob, is a BGE customer",
+                    "durationInMillis": 2743
+                  },
+                  {
+                    "step": "When Bob, logs into his BGE account with <invalidEmail> and <invalidPassword>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When Bob, logs into his BGE account with ?mayank@bordgais.ie? and ?mayank?",
+                    "durationInMillis": 1533
+                  },
+                  {
+                    "step": "Then Bob should see the error message as Incorrect username/password",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then Bob should see the error message as Incorrect username/password",
+                    "durationInMillis": 187
+                  },
+                  {
+                    "step": "When Bob, logs into his BGE account with <validEmail> and  <invalidPassword>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When Bob, logs into his BGE account with ?BGE123_0.rulez@gmx.net? and  ?mayank?",
+                    "durationInMillis": 2657
+                  },
+                  {
+                    "step": "Then Bob should see the error message as Incorrect username/password.",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then Bob should see the error message as Incorrect username/password.",
+                    "durationInMillis": 138
+                  },
+                  {
+                    "step": "When Bob, logs into his BGE account with <invalidEmail> and  <validPassword>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When Bob, logs into his BGE account with ?mayank@bordgais.ie? and  ?password?",
+                    "durationInMillis": 2851
+                  },
+                  {
+                    "step": "Then Bob should see the error message as Incorrect username/password.",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then Bob should see the error message as Incorrect username/password.",
+                    "durationInMillis": 392
+                  },
+                  {
+                    "step": "When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in",
+                    "durationInMillis": 2102
+                  },
+                  {
+                    "step": "Then Bob, should see the error message as Please enter your email and Please enter your password",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then Bob, should see the error message as Please enter your email and Please enter your password",
+                    "durationInMillis": 734
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": [
+                  {
+                    "@name": "login",
+                    "@value": ""
+                  }
+                ]
+              },
+              "scenario": {
+                "title": "Customer should not login to their account with incorrect credentials",
+                "meta": {
+                  "properties": [
+                    {
+                      "@name": "login",
+                      "@value": ""
+                    }
+                  ]
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "headerSeparator": "|",
+                    "valueSeparator": "|",
+                    "ignorableSeparator": "|--",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ],
+                    "propertiesAsString": "",
+                    "namedParameters": [],
+                    "trim": true
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|invalidEmail||invalidPassword||validEmail||validPassword|\r\n|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "invalidEmail",
+                    "",
+                    "invalidPassword",
+                    "",
+                    "validEmail",
+                    "",
+                    "validPassword"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "invalidEmail",
+                        "mayank@bordgais.ie"
+                      ],
+                      [
+                        "",
+                        ""
+                      ],
+                      [
+                        "invalidPassword",
+                        "mayank"
+                      ],
+                      [
+                        "validEmail",
+                        "BGE123_0.rulez@gmx.net"
+                      ],
+                      [
+                        "validPassword",
+                        "password"
+                      ],
+                      [
+                        "login",
+                        ""
+                      ]
+                    ]
+                  ],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                },
+                "steps": [
+                  "Given Bob, is a BGE customer",
+                  "When Bob, logs into his BGE account with <invalidEmail> and <invalidPassword>",
+                  "Then Bob should see the error message as Incorrect username/password",
+                  "When Bob, logs into his BGE account with <validEmail> and  <invalidPassword>",
+                  "Then Bob should see the error message as Incorrect username/password.",
+                  "When Bob, logs into his BGE account with <invalidEmail> and  <validPassword>",
+                  "Then Bob should see the error message as Incorrect username/password.",
+                  "When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in",
+                  "Then Bob, should see the error message as Please enter your email and Please enter your password"
+                ]
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        }
+      ],
+      "beforeSteps": {},
+      "afterSteps": {},
+      "timing": {
+        "durationInMillis": 48405
+      },
+      "givenStory": false
+    },
+    {
+      "story": {
+        "path": "stories/Login_Logout/logout.story",
+        "description": {
+          "descriptionAsString": ""
+        },
+        "narrative": {
+          "inOrderTo": "",
+          "asA": "",
+          "iWantTo": "",
+          "soThat": ""
+        },
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "lifecycle": {
+          "before": {
+            "steps": [
+              []
+            ]
+          },
+          "after": []
+        },
+        "scenarios": [
+          {
+            "title": "Customer logging out of their online account",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "logout",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "logout",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob a customer is logged into his BGE online account with <validEmail> and <validPassword>",
+              "When Bob, logs out of his BGE online account",
+              "Then Bob, is out of his Bord Gais Account"
+            ]
+          },
+          {
+            "title": "Customer logging out of their Bord Gais online account",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "logout",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "logout",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob, logged into his account with <validEmail> and <validPassword>",
+              "When Bob, logs out of his account",
+              "Then Bob, should be logged out of his BGE online account"
+            ]
+          }
+        ],
+        "name": "logout.story"
+      },
+      "localizedNarrative": "As a \nI want to \nSo that ",
+      "allowed": true,
+      "status": "SUCCESSFUL",
+      "givenStories": [],
+      "scenarios": [
+        {
+          "scenario": {
+            "title": "Customer logging out of their online account",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "logout",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "logout",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob a customer is logged into his BGE online account with <validEmail> and <validPassword>",
+              "When Bob, logs out of his BGE online account",
+              "Then Bob, is out of his Bord Gais Account"
+            ]
+          },
+          "storyPath": "stories/Login_Logout/logout.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "validEmail",
+                  "BGE123_0.rulez@gmx.net"
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "validPassword",
+                  "password"
+                ],
+                [
+                  "logout",
+                  ""
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given Bob a customer is logged into his BGE online account with <validEmail> and <validPassword>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given Bob a customer is logged into his BGE online account with ?BGE123_0.rulez@gmx.net? and ?password?",
+                    "durationInMillis": 18950
+                  },
+                  {
+                    "step": "When Bob, logs out of his BGE online account",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When Bob, logs out of his BGE online account",
+                    "durationInMillis": 3361
+                  },
+                  {
+                    "step": "Then Bob, is out of his Bord Gais Account",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then Bob, is out of his Bord Gais Account",
+                    "durationInMillis": 3099
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": [
+                  {
+                    "@name": "logout",
+                    "@value": ""
+                  }
+                ]
+              },
+              "scenario": {
+                "title": "Customer logging out of their online account",
+                "meta": {
+                  "properties": [
+                    {
+                      "@name": "logout",
+                      "@value": ""
+                    }
+                  ]
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "headerSeparator": "|",
+                    "valueSeparator": "|",
+                    "ignorableSeparator": "|--",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ],
+                    "propertiesAsString": "",
+                    "namedParameters": [],
+                    "trim": true
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "validEmail",
+                    "",
+                    "validPassword"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "validEmail",
+                        "BGE123_0.rulez@gmx.net"
+                      ],
+                      [
+                        "",
+                        ""
+                      ],
+                      [
+                        "validPassword",
+                        "password"
+                      ],
+                      [
+                        "logout",
+                        ""
+                      ]
+                    ]
+                  ],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                },
+                "steps": [
+                  "Given Bob a customer is logged into his BGE online account with <validEmail> and <validPassword>",
+                  "When Bob, logs out of his BGE online account",
+                  "Then Bob, is out of his Bord Gais Account"
+                ]
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "Customer logging out of their Bord Gais online account",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "logout",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "logout",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob, logged into his account with <validEmail> and <validPassword>",
+              "When Bob, logs out of his account",
+              "Then Bob, should be logged out of his BGE online account"
+            ]
+          },
+          "storyPath": "stories/Login_Logout/logout.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "validEmail",
+                  "BGE123_0.rulez@gmx.net"
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "validPassword",
+                  "password"
+                ],
+                [
+                  "logout",
+                  ""
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given Bob, logged into his account with <validEmail> and <validPassword>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given Bob, logged into his account with ?BGE123_0.rulez@gmx.net? and ?password?",
+                    "durationInMillis": 3116
+                  },
+                  {
+                    "step": "When Bob, logs out of his account",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When Bob, logs out of his account",
+                    "durationInMillis": 3727
+                  },
+                  {
+                    "step": "Then Bob, should be logged out of his BGE online account",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then Bob, should be logged out of his BGE online account",
+                    "durationInMillis": 192
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": [
+                  {
+                    "@name": "logout",
+                    "@value": ""
+                  }
+                ]
+              },
+              "scenario": {
+                "title": "Customer logging out of their Bord Gais online account",
+                "meta": {
+                  "properties": [
+                    {
+                      "@name": "logout",
+                      "@value": ""
+                    }
+                  ]
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "headerSeparator": "|",
+                    "valueSeparator": "|",
+                    "ignorableSeparator": "|--",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ],
+                    "propertiesAsString": "",
+                    "namedParameters": [],
+                    "trim": true
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "validEmail",
+                    "",
+                    "validPassword"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "validEmail",
+                        "BGE123_0.rulez@gmx.net"
+                      ],
+                      [
+                        "",
+                        ""
+                      ],
+                      [
+                        "validPassword",
+                        "password"
+                      ],
+                      [
+                        "logout",
+                        ""
+                      ]
+                    ]
+                  ],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                },
+                "steps": [
+                  "Given Bob, logged into his account with <validEmail> and <validPassword>",
+                  "When Bob, logs out of his account",
+                  "Then Bob, should be logged out of his BGE online account"
+                ]
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        }
+      ],
+      "beforeSteps": {},
+      "afterSteps": {},
+      "timing": {
+        "durationInMillis": 34902
+      },
+      "givenStory": false
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": {
+        "title": "Customer login into his account with valid credentials",
+        "meta": {
+          "properties": [
+            {
+              "@name": "login",
+              "@value": ""
+            }
+          ]
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "validEmail",
+            "",
+            "validPassword"
+          ],
+          "data": [
+            [
+              [
+                "validEmail",
+                "BGE123_0.rulez@gmx.net"
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "validPassword",
+                "password"
+              ],
+              [
+                "login",
+                ""
+              ]
+            ]
+          ],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given Bob, a customer",
+          "When Bob, logs into his BGE account with <validEmail> and <validPassword>",
+          "Then Bob, should see his BGE account Dashboard"
+        ]
+      },
+      "storyPath": "stories/Login_Logout/login.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "validEmail",
+              "BGE123_0.rulez@gmx.net"
+            ],
+            [
+              "",
+              ""
+            ],
+            [
+              "validPassword",
+              "password"
+            ],
+            [
+              "login",
+              ""
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given Bob, a customer",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given Bob, a customer",
+                "durationInMillis": 21239
+              },
+              {
+                "step": "When Bob, logs into his BGE account with <validEmail> and <validPassword>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When Bob, logs into his BGE account with ?BGE123_0.rulez@gmx.net? and ?password?",
+                "durationInMillis": 5016
+              },
+              {
+                "step": "Then Bob, should see his BGE account Dashboard",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then Bob, should see his BGE account Dashboard",
+                "durationInMillis": 3403
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": [
+              {
+                "@name": "login",
+                "@value": ""
+              }
+            ]
+          },
+          "scenario": {
+            "title": "Customer login into his account with valid credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "login",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "login",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob, a customer",
+              "When Bob, logs into his BGE account with <validEmail> and <validPassword>",
+              "Then Bob, should see his BGE account Dashboard"
+            ]
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "Customer should not login to their account with incorrect credentials",
+        "meta": {
+          "properties": [
+            {
+              "@name": "login",
+              "@value": ""
+            }
+          ]
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|invalidEmail||invalidPassword||validEmail||validPassword|\r\n|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "invalidEmail",
+            "",
+            "invalidPassword",
+            "",
+            "validEmail",
+            "",
+            "validPassword"
+          ],
+          "data": [
+            [
+              [
+                "invalidEmail",
+                "mayank@bordgais.ie"
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "invalidPassword",
+                "mayank"
+              ],
+              [
+                "validEmail",
+                "BGE123_0.rulez@gmx.net"
+              ],
+              [
+                "validPassword",
+                "password"
+              ],
+              [
+                "login",
+                ""
+              ]
+            ]
+          ],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given Bob, is a BGE customer",
+          "When Bob, logs into his BGE account with <invalidEmail> and <invalidPassword>",
+          "Then Bob should see the error message as Incorrect username/password",
+          "When Bob, logs into his BGE account with <validEmail> and  <invalidPassword>",
+          "Then Bob should see the error message as Incorrect username/password.",
+          "When Bob, logs into his BGE account with <invalidEmail> and  <validPassword>",
+          "Then Bob should see the error message as Incorrect username/password.",
+          "When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in",
+          "Then Bob, should see the error message as Please enter your email and Please enter your password"
+        ]
+      },
+      "storyPath": "stories/Login_Logout/login.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "invalidEmail",
+              "mayank@bordgais.ie"
+            ],
+            [
+              "",
+              ""
+            ],
+            [
+              "invalidPassword",
+              "mayank"
+            ],
+            [
+              "validEmail",
+              "BGE123_0.rulez@gmx.net"
+            ],
+            [
+              "validPassword",
+              "password"
+            ],
+            [
+              "login",
+              ""
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given Bob, is a BGE customer",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given Bob, is a BGE customer",
+                "durationInMillis": 2743
+              },
+              {
+                "step": "When Bob, logs into his BGE account with <invalidEmail> and <invalidPassword>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When Bob, logs into his BGE account with ?mayank@bordgais.ie? and ?mayank?",
+                "durationInMillis": 1533
+              },
+              {
+                "step": "Then Bob should see the error message as Incorrect username/password",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then Bob should see the error message as Incorrect username/password",
+                "durationInMillis": 187
+              },
+              {
+                "step": "When Bob, logs into his BGE account with <validEmail> and  <invalidPassword>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When Bob, logs into his BGE account with ?BGE123_0.rulez@gmx.net? and  ?mayank?",
+                "durationInMillis": 2657
+              },
+              {
+                "step": "Then Bob should see the error message as Incorrect username/password.",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then Bob should see the error message as Incorrect username/password.",
+                "durationInMillis": 138
+              },
+              {
+                "step": "When Bob, logs into his BGE account with <invalidEmail> and  <validPassword>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When Bob, logs into his BGE account with ?mayank@bordgais.ie? and  ?password?",
+                "durationInMillis": 2851
+              },
+              {
+                "step": "Then Bob should see the error message as Incorrect username/password.",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then Bob should see the error message as Incorrect username/password.",
+                "durationInMillis": 392
+              },
+              {
+                "step": "When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in",
+                "durationInMillis": 2102
+              },
+              {
+                "step": "Then Bob, should see the error message as Please enter your email and Please enter your password",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then Bob, should see the error message as Please enter your email and Please enter your password",
+                "durationInMillis": 734
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": [
+              {
+                "@name": "login",
+                "@value": ""
+              }
+            ]
+          },
+          "scenario": {
+            "title": "Customer should not login to their account with incorrect credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "login",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|invalidEmail||invalidPassword||validEmail||validPassword|\r\n|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "invalidEmail",
+                "",
+                "invalidPassword",
+                "",
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "invalidEmail",
+                    "mayank@bordgais.ie"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "invalidPassword",
+                    "mayank"
+                  ],
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "login",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob, is a BGE customer",
+              "When Bob, logs into his BGE account with <invalidEmail> and <invalidPassword>",
+              "Then Bob should see the error message as Incorrect username/password",
+              "When Bob, logs into his BGE account with <validEmail> and  <invalidPassword>",
+              "Then Bob should see the error message as Incorrect username/password.",
+              "When Bob, logs into his BGE account with <invalidEmail> and  <validPassword>",
+              "Then Bob should see the error message as Incorrect username/password.",
+              "When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in",
+              "Then Bob, should see the error message as Please enter your email and Please enter your password"
+            ]
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "Customer logging out of their online account",
+        "meta": {
+          "properties": [
+            {
+              "@name": "logout",
+              "@value": ""
+            }
+          ]
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "validEmail",
+            "",
+            "validPassword"
+          ],
+          "data": [
+            [
+              [
+                "validEmail",
+                "BGE123_0.rulez@gmx.net"
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "validPassword",
+                "password"
+              ],
+              [
+                "logout",
+                ""
+              ]
+            ]
+          ],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given Bob a customer is logged into his BGE online account with <validEmail> and <validPassword>",
+          "When Bob, logs out of his BGE online account",
+          "Then Bob, is out of his Bord Gais Account"
+        ]
+      },
+      "storyPath": "stories/Login_Logout/logout.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "validEmail",
+              "BGE123_0.rulez@gmx.net"
+            ],
+            [
+              "",
+              ""
+            ],
+            [
+              "validPassword",
+              "password"
+            ],
+            [
+              "logout",
+              ""
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given Bob a customer is logged into his BGE online account with <validEmail> and <validPassword>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given Bob a customer is logged into his BGE online account with ?BGE123_0.rulez@gmx.net? and ?password?",
+                "durationInMillis": 18950
+              },
+              {
+                "step": "When Bob, logs out of his BGE online account",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When Bob, logs out of his BGE online account",
+                "durationInMillis": 3361
+              },
+              {
+                "step": "Then Bob, is out of his Bord Gais Account",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then Bob, is out of his Bord Gais Account",
+                "durationInMillis": 3099
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": [
+              {
+                "@name": "logout",
+                "@value": ""
+              }
+            ]
+          },
+          "scenario": {
+            "title": "Customer logging out of their online account",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "logout",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "logout",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob a customer is logged into his BGE online account with <validEmail> and <validPassword>",
+              "When Bob, logs out of his BGE online account",
+              "Then Bob, is out of his Bord Gais Account"
+            ]
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "Customer logging out of their Bord Gais online account",
+        "meta": {
+          "properties": [
+            {
+              "@name": "logout",
+              "@value": ""
+            }
+          ]
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "validEmail",
+            "",
+            "validPassword"
+          ],
+          "data": [
+            [
+              [
+                "validEmail",
+                "BGE123_0.rulez@gmx.net"
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "validPassword",
+                "password"
+              ],
+              [
+                "logout",
+                ""
+              ]
+            ]
+          ],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given Bob, logged into his account with <validEmail> and <validPassword>",
+          "When Bob, logs out of his account",
+          "Then Bob, should be logged out of his BGE online account"
+        ]
+      },
+      "storyPath": "stories/Login_Logout/logout.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "validEmail",
+              "BGE123_0.rulez@gmx.net"
+            ],
+            [
+              "",
+              ""
+            ],
+            [
+              "validPassword",
+              "password"
+            ],
+            [
+              "logout",
+              ""
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given Bob, logged into his account with <validEmail> and <validPassword>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given Bob, logged into his account with ?BGE123_0.rulez@gmx.net? and ?password?",
+                "durationInMillis": 3116
+              },
+              {
+                "step": "When Bob, logs out of his account",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When Bob, logs out of his account",
+                "durationInMillis": 3727
+              },
+              {
+                "step": "Then Bob, should be logged out of his BGE online account",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then Bob, should be logged out of his BGE online account",
+                "durationInMillis": 192
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": [
+              {
+                "@name": "logout",
+                "@value": ""
+              }
+            ]
+          },
+          "scenario": {
+            "title": "Customer logging out of their Bord Gais online account",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "logout",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validEmail||validPassword|\r\n|BGE123_0.rulez@gmx.net||password|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validEmail",
+                "",
+                "validPassword"
+              ],
+              "data": [
+                [
+                  [
+                    "validEmail",
+                    "BGE123_0.rulez@gmx.net"
+                  ],
+                  [
+                    "",
+                    ""
+                  ],
+                  [
+                    "validPassword",
+                    "password"
+                  ],
+                  [
+                    "logout",
+                    ""
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given Bob, logged into his account with <validEmail> and <validPassword>",
+              "When Bob, logs out of his account",
+              "Then Bob, should be logged out of his BGE online account"
+            ]
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    }
+  ]
+}}

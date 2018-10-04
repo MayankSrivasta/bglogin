@@ -1,0 +1,2936 @@
+<xref>
+  <stories>
+    <performableStory>
+      <story>
+        <path>stories/Login_Logout/login.story</path>
+        <description>
+          <descriptionAsString></descriptionAsString>
+        </description>
+        <narrative>
+          <inOrderTo></inOrderTo>
+          <asA></asA>
+          <iWantTo></iWantTo>
+          <soThat></soThat>
+        </narrative>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <lifecycle>
+          <before>
+            <steps class="java.util.Arrays$ArrayList">
+              <a class="string-array"/>
+            </steps>
+          </before>
+          <after/>
+        </lifecycle>
+        <scenarios>
+          <scenario>
+            <title>Customer login into his account with valid credentials</title>
+            <meta>
+              <properties>
+                <property name="login" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>login</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob, a customer</string>
+              <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+              <string>Then Bob, should see his BGE account Dashboard</string>
+            </steps>
+          </scenario>
+          <scenario>
+            <title>Customer should not login to their account with incorrect credentials</title>
+            <meta>
+              <properties>
+                <property name="login" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|invalidEmail||invalidPassword||validEmail||validPassword|&#xd;
+|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>invalidEmail</string>
+                <string></string>
+                <string>invalidPassword</string>
+                <string></string>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>invalidEmail</string>
+                    <string>mayank@bordgais.ie</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>invalidPassword</string>
+                    <string>mayank</string>
+                  </entry>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>login</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob, is a BGE customer</string>
+              <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and &lt;invalidPassword&gt;</string>
+              <string>Then Bob should see the error message as Incorrect username/password</string>
+              <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and  &lt;invalidPassword&gt;</string>
+              <string>Then Bob should see the error message as Incorrect username/password.</string>
+              <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and  &lt;validPassword&gt;</string>
+              <string>Then Bob should see the error message as Incorrect username/password.</string>
+              <string>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</string>
+              <string>Then Bob, should see the error message as Please enter your email and Please enter your password</string>
+            </steps>
+          </scenario>
+        </scenarios>
+        <name>login.story</name>
+      </story>
+      <localizedNarrative>As a 
+I want to 
+So that </localizedNarrative>
+      <allowed>true</allowed>
+      <status>SUCCESSFUL</status>
+      <givenStories/>
+      <scenarios>
+        <performableScenario>
+          <scenario>
+            <title>Customer login into his account with valid credentials</title>
+            <meta>
+              <properties>
+                <property name="login" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>login</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob, a customer</string>
+              <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+              <string>Then Bob, should see his BGE account Dashboard</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/Login_Logout/login.story</storyPath>
+          <allowed>true</allowed>
+          <examplePerformableScenarios>
+            <examplePerformableScenario>
+              <parameters class="linked-hash-map">
+                <entry>
+                  <string>validEmail</string>
+                  <string>BGE123_0.rulez@gmx.net</string>
+                </entry>
+                <entry>
+                  <string></string>
+                  <string></string>
+                </entry>
+                <entry>
+                  <string>validPassword</string>
+                  <string>password</string>
+                </entry>
+                <entry>
+                  <string>login</string>
+                  <string></string>
+                </entry>
+              </parameters>
+              <givenStories/>
+              <beforeSteps>
+                <matches/>
+              </beforeSteps>
+              <steps>
+                <matches/>
+                <results>
+                  <successful>
+                    <step>Given Bob, a customer</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Given Bob, a customer</parametrisedStep>
+                    <durationInMillis>21239</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When Bob, logs into his BGE account with &lt;validEmail&gt; and &lt;validPassword&gt;</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When Bob, logs into his BGE account with ?BGE123_0.rulez@gmx.net? and ?password?</parametrisedStep>
+                    <durationInMillis>5016</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then Bob, should see his BGE account Dashboard</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then Bob, should see his BGE account Dashboard</parametrisedStep>
+                    <durationInMillis>3403</durationInMillis>
+                  </successful>
+                </results>
+              </steps>
+              <afterSteps>
+                <matches/>
+              </afterSteps>
+              <storyAndScenarioMeta>
+                <properties>
+                  <property name="login" value=""/>
+                </properties>
+              </storyAndScenarioMeta>
+              <scenario>
+                <title>Customer login into his account with valid credentials</title>
+                <meta>
+                  <properties>
+                    <property name="login" value=""/>
+                  </properties>
+                </meta>
+                <givenStories>
+                  <givenStories/>
+                  <givenStoriesAsString></givenStoriesAsString>
+                  <examplesTable>
+                    <tableAsString></tableAsString>
+                    <headerSeparator>|</headerSeparator>
+                    <valueSeparator>|</valueSeparator>
+                    <ignorableSeparator>|--</ignorableSeparator>
+                    <tableTransformers>
+                      <transformers>
+                        <entry>
+                          <string>FORMATTING</string>
+                          <formatting/>
+                        </entry>
+                        <entry>
+                          <string>REPLACING</string>
+                          <replacing/>
+                        </entry>
+                        <entry>
+                          <string>FROM_LANDSCAPE</string>
+                          <fromLandscape/>
+                        </entry>
+                      </transformers>
+                    </tableTransformers>
+                    <headers/>
+                    <data/>
+                    <properties>
+                      <property name="headerSeparator" value="|"/>
+                      <property name="valueSeparator" value="|"/>
+                      <property name="ignorableSeparator" value="|--"/>
+                    </properties>
+                    <propertiesAsString></propertiesAsString>
+                    <namedParameters/>
+                    <trim>true</trim>
+                  </examplesTable>
+                </givenStories>
+                <examplesTable>
+                  <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+                  <headerSeparator>|</headerSeparator>
+                  <valueSeparator>|</valueSeparator>
+                  <ignorableSeparator>|--</ignorableSeparator>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers>
+                    <string>validEmail</string>
+                    <string></string>
+                    <string>validPassword</string>
+                  </headers>
+                  <data>
+                    <linked-hash-map>
+                      <entry>
+                        <string>validEmail</string>
+                        <string>BGE123_0.rulez@gmx.net</string>
+                      </entry>
+                      <entry>
+                        <string></string>
+                        <string></string>
+                      </entry>
+                      <entry>
+                        <string>validPassword</string>
+                        <string>password</string>
+                      </entry>
+                      <entry>
+                        <string>login</string>
+                        <string></string>
+                      </entry>
+                    </linked-hash-map>
+                  </data>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                  <trim>true</trim>
+                </examplesTable>
+                <steps>
+                  <string>Given Bob, a customer</string>
+                  <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+                  <string>Then Bob, should see his BGE account Dashboard</string>
+                </steps>
+              </scenario>
+            </examplePerformableScenario>
+          </examplePerformableScenarios>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+        <performableScenario>
+          <scenario>
+            <title>Customer should not login to their account with incorrect credentials</title>
+            <meta>
+              <properties>
+                <property name="login" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|invalidEmail||invalidPassword||validEmail||validPassword|&#xd;
+|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>invalidEmail</string>
+                <string></string>
+                <string>invalidPassword</string>
+                <string></string>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>invalidEmail</string>
+                    <string>mayank@bordgais.ie</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>invalidPassword</string>
+                    <string>mayank</string>
+                  </entry>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>login</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob, is a BGE customer</string>
+              <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and &lt;invalidPassword&gt;</string>
+              <string>Then Bob should see the error message as Incorrect username/password</string>
+              <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and  &lt;invalidPassword&gt;</string>
+              <string>Then Bob should see the error message as Incorrect username/password.</string>
+              <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and  &lt;validPassword&gt;</string>
+              <string>Then Bob should see the error message as Incorrect username/password.</string>
+              <string>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</string>
+              <string>Then Bob, should see the error message as Please enter your email and Please enter your password</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/Login_Logout/login.story</storyPath>
+          <allowed>true</allowed>
+          <examplePerformableScenarios>
+            <examplePerformableScenario>
+              <parameters class="linked-hash-map">
+                <entry>
+                  <string>invalidEmail</string>
+                  <string>mayank@bordgais.ie</string>
+                </entry>
+                <entry>
+                  <string></string>
+                  <string></string>
+                </entry>
+                <entry>
+                  <string>invalidPassword</string>
+                  <string>mayank</string>
+                </entry>
+                <entry>
+                  <string>validEmail</string>
+                  <string>BGE123_0.rulez@gmx.net</string>
+                </entry>
+                <entry>
+                  <string>validPassword</string>
+                  <string>password</string>
+                </entry>
+                <entry>
+                  <string>login</string>
+                  <string></string>
+                </entry>
+              </parameters>
+              <givenStories/>
+              <beforeSteps>
+                <matches/>
+              </beforeSteps>
+              <steps>
+                <matches/>
+                <results>
+                  <successful>
+                    <step>Given Bob, is a BGE customer</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Given Bob, is a BGE customer</parametrisedStep>
+                    <durationInMillis>2743</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and &lt;invalidPassword&gt;</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When Bob, logs into his BGE account with ?mayank@bordgais.ie? and ?mayank?</parametrisedStep>
+                    <durationInMillis>1533</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then Bob should see the error message as Incorrect username/password</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then Bob should see the error message as Incorrect username/password</parametrisedStep>
+                    <durationInMillis>187</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When Bob, logs into his BGE account with &lt;validEmail&gt; and  &lt;invalidPassword&gt;</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When Bob, logs into his BGE account with ?BGE123_0.rulez@gmx.net? and  ?mayank?</parametrisedStep>
+                    <durationInMillis>2657</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then Bob should see the error message as Incorrect username/password.</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then Bob should see the error message as Incorrect username/password.</parametrisedStep>
+                    <durationInMillis>138</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and  &lt;validPassword&gt;</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When Bob, logs into his BGE account with ?mayank@bordgais.ie? and  ?password?</parametrisedStep>
+                    <durationInMillis>2851</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then Bob should see the error message as Incorrect username/password.</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then Bob should see the error message as Incorrect username/password.</parametrisedStep>
+                    <durationInMillis>392</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</parametrisedStep>
+                    <durationInMillis>2102</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then Bob, should see the error message as Please enter your email and Please enter your password</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then Bob, should see the error message as Please enter your email and Please enter your password</parametrisedStep>
+                    <durationInMillis>734</durationInMillis>
+                  </successful>
+                </results>
+              </steps>
+              <afterSteps>
+                <matches/>
+              </afterSteps>
+              <storyAndScenarioMeta>
+                <properties>
+                  <property name="login" value=""/>
+                </properties>
+              </storyAndScenarioMeta>
+              <scenario>
+                <title>Customer should not login to their account with incorrect credentials</title>
+                <meta>
+                  <properties>
+                    <property name="login" value=""/>
+                  </properties>
+                </meta>
+                <givenStories>
+                  <givenStories/>
+                  <givenStoriesAsString></givenStoriesAsString>
+                  <examplesTable>
+                    <tableAsString></tableAsString>
+                    <headerSeparator>|</headerSeparator>
+                    <valueSeparator>|</valueSeparator>
+                    <ignorableSeparator>|--</ignorableSeparator>
+                    <tableTransformers>
+                      <transformers>
+                        <entry>
+                          <string>FORMATTING</string>
+                          <formatting/>
+                        </entry>
+                        <entry>
+                          <string>REPLACING</string>
+                          <replacing/>
+                        </entry>
+                        <entry>
+                          <string>FROM_LANDSCAPE</string>
+                          <fromLandscape/>
+                        </entry>
+                      </transformers>
+                    </tableTransformers>
+                    <headers/>
+                    <data/>
+                    <properties>
+                      <property name="headerSeparator" value="|"/>
+                      <property name="valueSeparator" value="|"/>
+                      <property name="ignorableSeparator" value="|--"/>
+                    </properties>
+                    <propertiesAsString></propertiesAsString>
+                    <namedParameters/>
+                    <trim>true</trim>
+                  </examplesTable>
+                </givenStories>
+                <examplesTable>
+                  <tableAsString>|invalidEmail||invalidPassword||validEmail||validPassword|&#xd;
+|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|</tableAsString>
+                  <headerSeparator>|</headerSeparator>
+                  <valueSeparator>|</valueSeparator>
+                  <ignorableSeparator>|--</ignorableSeparator>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers>
+                    <string>invalidEmail</string>
+                    <string></string>
+                    <string>invalidPassword</string>
+                    <string></string>
+                    <string>validEmail</string>
+                    <string></string>
+                    <string>validPassword</string>
+                  </headers>
+                  <data>
+                    <linked-hash-map>
+                      <entry>
+                        <string>invalidEmail</string>
+                        <string>mayank@bordgais.ie</string>
+                      </entry>
+                      <entry>
+                        <string></string>
+                        <string></string>
+                      </entry>
+                      <entry>
+                        <string>invalidPassword</string>
+                        <string>mayank</string>
+                      </entry>
+                      <entry>
+                        <string>validEmail</string>
+                        <string>BGE123_0.rulez@gmx.net</string>
+                      </entry>
+                      <entry>
+                        <string>validPassword</string>
+                        <string>password</string>
+                      </entry>
+                      <entry>
+                        <string>login</string>
+                        <string></string>
+                      </entry>
+                    </linked-hash-map>
+                  </data>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                  <trim>true</trim>
+                </examplesTable>
+                <steps>
+                  <string>Given Bob, is a BGE customer</string>
+                  <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and &lt;invalidPassword&gt;</string>
+                  <string>Then Bob should see the error message as Incorrect username/password</string>
+                  <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and  &lt;invalidPassword&gt;</string>
+                  <string>Then Bob should see the error message as Incorrect username/password.</string>
+                  <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and  &lt;validPassword&gt;</string>
+                  <string>Then Bob should see the error message as Incorrect username/password.</string>
+                  <string>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</string>
+                  <string>Then Bob, should see the error message as Please enter your email and Please enter your password</string>
+                </steps>
+              </scenario>
+            </examplePerformableScenario>
+          </examplePerformableScenarios>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+      </scenarios>
+      <beforeSteps/>
+      <afterSteps/>
+      <timing>
+        <durationInMillis>48405</durationInMillis>
+      </timing>
+      <givenStory>false</givenStory>
+    </performableStory>
+    <performableStory>
+      <story>
+        <path>stories/Login_Logout/logout.story</path>
+        <description>
+          <descriptionAsString></descriptionAsString>
+        </description>
+        <narrative>
+          <inOrderTo></inOrderTo>
+          <asA></asA>
+          <iWantTo></iWantTo>
+          <soThat></soThat>
+        </narrative>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <lifecycle>
+          <before>
+            <steps class="java.util.Arrays$ArrayList">
+              <a class="string-array"/>
+            </steps>
+          </before>
+          <after/>
+        </lifecycle>
+        <scenarios>
+          <scenario>
+            <title>Customer logging out of their online account</title>
+            <meta>
+              <properties>
+                <property name="logout" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>logout</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob a customer is logged into his BGE online account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+              <string>When Bob, logs out of his BGE online account</string>
+              <string>Then Bob, is out of his Bord Gais Account</string>
+            </steps>
+          </scenario>
+          <scenario>
+            <title>Customer logging out of their Bord Gais online account</title>
+            <meta>
+              <properties>
+                <property name="logout" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>logout</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob, logged into his account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+              <string>When Bob, logs out of his account</string>
+              <string>Then Bob, should be logged out of his BGE online account</string>
+            </steps>
+          </scenario>
+        </scenarios>
+        <name>logout.story</name>
+      </story>
+      <localizedNarrative>As a 
+I want to 
+So that </localizedNarrative>
+      <allowed>true</allowed>
+      <status>SUCCESSFUL</status>
+      <givenStories/>
+      <scenarios>
+        <performableScenario>
+          <scenario>
+            <title>Customer logging out of their online account</title>
+            <meta>
+              <properties>
+                <property name="logout" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>logout</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob a customer is logged into his BGE online account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+              <string>When Bob, logs out of his BGE online account</string>
+              <string>Then Bob, is out of his Bord Gais Account</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/Login_Logout/logout.story</storyPath>
+          <allowed>true</allowed>
+          <examplePerformableScenarios>
+            <examplePerformableScenario>
+              <parameters class="linked-hash-map">
+                <entry>
+                  <string>validEmail</string>
+                  <string>BGE123_0.rulez@gmx.net</string>
+                </entry>
+                <entry>
+                  <string></string>
+                  <string></string>
+                </entry>
+                <entry>
+                  <string>validPassword</string>
+                  <string>password</string>
+                </entry>
+                <entry>
+                  <string>logout</string>
+                  <string></string>
+                </entry>
+              </parameters>
+              <givenStories/>
+              <beforeSteps>
+                <matches/>
+              </beforeSteps>
+              <steps>
+                <matches/>
+                <results>
+                  <successful>
+                    <step>Given Bob a customer is logged into his BGE online account with &lt;validEmail&gt; and &lt;validPassword&gt;</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Given Bob a customer is logged into his BGE online account with ?BGE123_0.rulez@gmx.net? and ?password?</parametrisedStep>
+                    <durationInMillis>18950</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When Bob, logs out of his BGE online account</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When Bob, logs out of his BGE online account</parametrisedStep>
+                    <durationInMillis>3361</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then Bob, is out of his Bord Gais Account</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then Bob, is out of his Bord Gais Account</parametrisedStep>
+                    <durationInMillis>3099</durationInMillis>
+                  </successful>
+                </results>
+              </steps>
+              <afterSteps>
+                <matches/>
+              </afterSteps>
+              <storyAndScenarioMeta>
+                <properties>
+                  <property name="logout" value=""/>
+                </properties>
+              </storyAndScenarioMeta>
+              <scenario>
+                <title>Customer logging out of their online account</title>
+                <meta>
+                  <properties>
+                    <property name="logout" value=""/>
+                  </properties>
+                </meta>
+                <givenStories>
+                  <givenStories/>
+                  <givenStoriesAsString></givenStoriesAsString>
+                  <examplesTable>
+                    <tableAsString></tableAsString>
+                    <headerSeparator>|</headerSeparator>
+                    <valueSeparator>|</valueSeparator>
+                    <ignorableSeparator>|--</ignorableSeparator>
+                    <tableTransformers>
+                      <transformers>
+                        <entry>
+                          <string>FORMATTING</string>
+                          <formatting/>
+                        </entry>
+                        <entry>
+                          <string>REPLACING</string>
+                          <replacing/>
+                        </entry>
+                        <entry>
+                          <string>FROM_LANDSCAPE</string>
+                          <fromLandscape/>
+                        </entry>
+                      </transformers>
+                    </tableTransformers>
+                    <headers/>
+                    <data/>
+                    <properties>
+                      <property name="headerSeparator" value="|"/>
+                      <property name="valueSeparator" value="|"/>
+                      <property name="ignorableSeparator" value="|--"/>
+                    </properties>
+                    <propertiesAsString></propertiesAsString>
+                    <namedParameters/>
+                    <trim>true</trim>
+                  </examplesTable>
+                </givenStories>
+                <examplesTable>
+                  <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+                  <headerSeparator>|</headerSeparator>
+                  <valueSeparator>|</valueSeparator>
+                  <ignorableSeparator>|--</ignorableSeparator>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers>
+                    <string>validEmail</string>
+                    <string></string>
+                    <string>validPassword</string>
+                  </headers>
+                  <data>
+                    <linked-hash-map>
+                      <entry>
+                        <string>validEmail</string>
+                        <string>BGE123_0.rulez@gmx.net</string>
+                      </entry>
+                      <entry>
+                        <string></string>
+                        <string></string>
+                      </entry>
+                      <entry>
+                        <string>validPassword</string>
+                        <string>password</string>
+                      </entry>
+                      <entry>
+                        <string>logout</string>
+                        <string></string>
+                      </entry>
+                    </linked-hash-map>
+                  </data>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                  <trim>true</trim>
+                </examplesTable>
+                <steps>
+                  <string>Given Bob a customer is logged into his BGE online account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+                  <string>When Bob, logs out of his BGE online account</string>
+                  <string>Then Bob, is out of his Bord Gais Account</string>
+                </steps>
+              </scenario>
+            </examplePerformableScenario>
+          </examplePerformableScenarios>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+        <performableScenario>
+          <scenario>
+            <title>Customer logging out of their Bord Gais online account</title>
+            <meta>
+              <properties>
+                <property name="logout" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>logout</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob, logged into his account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+              <string>When Bob, logs out of his account</string>
+              <string>Then Bob, should be logged out of his BGE online account</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/Login_Logout/logout.story</storyPath>
+          <allowed>true</allowed>
+          <examplePerformableScenarios>
+            <examplePerformableScenario>
+              <parameters class="linked-hash-map">
+                <entry>
+                  <string>validEmail</string>
+                  <string>BGE123_0.rulez@gmx.net</string>
+                </entry>
+                <entry>
+                  <string></string>
+                  <string></string>
+                </entry>
+                <entry>
+                  <string>validPassword</string>
+                  <string>password</string>
+                </entry>
+                <entry>
+                  <string>logout</string>
+                  <string></string>
+                </entry>
+              </parameters>
+              <givenStories/>
+              <beforeSteps>
+                <matches/>
+              </beforeSteps>
+              <steps>
+                <matches/>
+                <results>
+                  <successful>
+                    <step>Given Bob, logged into his account with &lt;validEmail&gt; and &lt;validPassword&gt;</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Given Bob, logged into his account with ?BGE123_0.rulez@gmx.net? and ?password?</parametrisedStep>
+                    <durationInMillis>3116</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When Bob, logs out of his account</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When Bob, logs out of his account</parametrisedStep>
+                    <durationInMillis>3727</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then Bob, should be logged out of his BGE online account</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then Bob, should be logged out of his BGE online account</parametrisedStep>
+                    <durationInMillis>192</durationInMillis>
+                  </successful>
+                </results>
+              </steps>
+              <afterSteps>
+                <matches/>
+              </afterSteps>
+              <storyAndScenarioMeta>
+                <properties>
+                  <property name="logout" value=""/>
+                </properties>
+              </storyAndScenarioMeta>
+              <scenario>
+                <title>Customer logging out of their Bord Gais online account</title>
+                <meta>
+                  <properties>
+                    <property name="logout" value=""/>
+                  </properties>
+                </meta>
+                <givenStories>
+                  <givenStories/>
+                  <givenStoriesAsString></givenStoriesAsString>
+                  <examplesTable>
+                    <tableAsString></tableAsString>
+                    <headerSeparator>|</headerSeparator>
+                    <valueSeparator>|</valueSeparator>
+                    <ignorableSeparator>|--</ignorableSeparator>
+                    <tableTransformers>
+                      <transformers>
+                        <entry>
+                          <string>FORMATTING</string>
+                          <formatting/>
+                        </entry>
+                        <entry>
+                          <string>REPLACING</string>
+                          <replacing/>
+                        </entry>
+                        <entry>
+                          <string>FROM_LANDSCAPE</string>
+                          <fromLandscape/>
+                        </entry>
+                      </transformers>
+                    </tableTransformers>
+                    <headers/>
+                    <data/>
+                    <properties>
+                      <property name="headerSeparator" value="|"/>
+                      <property name="valueSeparator" value="|"/>
+                      <property name="ignorableSeparator" value="|--"/>
+                    </properties>
+                    <propertiesAsString></propertiesAsString>
+                    <namedParameters/>
+                    <trim>true</trim>
+                  </examplesTable>
+                </givenStories>
+                <examplesTable>
+                  <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+                  <headerSeparator>|</headerSeparator>
+                  <valueSeparator>|</valueSeparator>
+                  <ignorableSeparator>|--</ignorableSeparator>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers>
+                    <string>validEmail</string>
+                    <string></string>
+                    <string>validPassword</string>
+                  </headers>
+                  <data>
+                    <linked-hash-map>
+                      <entry>
+                        <string>validEmail</string>
+                        <string>BGE123_0.rulez@gmx.net</string>
+                      </entry>
+                      <entry>
+                        <string></string>
+                        <string></string>
+                      </entry>
+                      <entry>
+                        <string>validPassword</string>
+                        <string>password</string>
+                      </entry>
+                      <entry>
+                        <string>logout</string>
+                        <string></string>
+                      </entry>
+                    </linked-hash-map>
+                  </data>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                  <trim>true</trim>
+                </examplesTable>
+                <steps>
+                  <string>Given Bob, logged into his account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+                  <string>When Bob, logs out of his account</string>
+                  <string>Then Bob, should be logged out of his BGE online account</string>
+                </steps>
+              </scenario>
+            </examplePerformableScenario>
+          </examplePerformableScenarios>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+      </scenarios>
+      <beforeSteps/>
+      <afterSteps/>
+      <timing>
+        <durationInMillis>34902</durationInMillis>
+      </timing>
+      <givenStory>false</givenStory>
+    </performableStory>
+  </stories>
+  <scenarios>
+    <performableScenario>
+      <scenario>
+        <title>Customer login into his account with valid credentials</title>
+        <meta>
+          <properties>
+            <property name="login" value=""/>
+          </properties>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers>
+            <string>validEmail</string>
+            <string></string>
+            <string>validPassword</string>
+          </headers>
+          <data>
+            <linked-hash-map>
+              <entry>
+                <string>validEmail</string>
+                <string>BGE123_0.rulez@gmx.net</string>
+              </entry>
+              <entry>
+                <string></string>
+                <string></string>
+              </entry>
+              <entry>
+                <string>validPassword</string>
+                <string>password</string>
+              </entry>
+              <entry>
+                <string>login</string>
+                <string></string>
+              </entry>
+            </linked-hash-map>
+          </data>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given Bob, a customer</string>
+          <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+          <string>Then Bob, should see his BGE account Dashboard</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/Login_Logout/login.story</storyPath>
+      <allowed>true</allowed>
+      <examplePerformableScenarios>
+        <examplePerformableScenario>
+          <parameters class="linked-hash-map">
+            <entry>
+              <string>validEmail</string>
+              <string>BGE123_0.rulez@gmx.net</string>
+            </entry>
+            <entry>
+              <string></string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>validPassword</string>
+              <string>password</string>
+            </entry>
+            <entry>
+              <string>login</string>
+              <string></string>
+            </entry>
+          </parameters>
+          <givenStories/>
+          <beforeSteps>
+            <matches/>
+          </beforeSteps>
+          <steps>
+            <matches/>
+            <results>
+              <successful>
+                <step>Given Bob, a customer</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Given Bob, a customer</parametrisedStep>
+                <durationInMillis>21239</durationInMillis>
+              </successful>
+              <successful>
+                <step>When Bob, logs into his BGE account with &lt;validEmail&gt; and &lt;validPassword&gt;</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When Bob, logs into his BGE account with ?BGE123_0.rulez@gmx.net? and ?password?</parametrisedStep>
+                <durationInMillis>5016</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then Bob, should see his BGE account Dashboard</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then Bob, should see his BGE account Dashboard</parametrisedStep>
+                <durationInMillis>3403</durationInMillis>
+              </successful>
+            </results>
+          </steps>
+          <afterSteps>
+            <matches/>
+          </afterSteps>
+          <storyAndScenarioMeta>
+            <properties>
+              <property name="login" value=""/>
+            </properties>
+          </storyAndScenarioMeta>
+          <scenario>
+            <title>Customer login into his account with valid credentials</title>
+            <meta>
+              <properties>
+                <property name="login" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>login</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob, a customer</string>
+              <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+              <string>Then Bob, should see his BGE account Dashboard</string>
+            </steps>
+          </scenario>
+        </examplePerformableScenario>
+      </examplePerformableScenarios>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+    <performableScenario>
+      <scenario>
+        <title>Customer should not login to their account with incorrect credentials</title>
+        <meta>
+          <properties>
+            <property name="login" value=""/>
+          </properties>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString>|invalidEmail||invalidPassword||validEmail||validPassword|&#xd;
+|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|</tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers>
+            <string>invalidEmail</string>
+            <string></string>
+            <string>invalidPassword</string>
+            <string></string>
+            <string>validEmail</string>
+            <string></string>
+            <string>validPassword</string>
+          </headers>
+          <data>
+            <linked-hash-map>
+              <entry>
+                <string>invalidEmail</string>
+                <string>mayank@bordgais.ie</string>
+              </entry>
+              <entry>
+                <string></string>
+                <string></string>
+              </entry>
+              <entry>
+                <string>invalidPassword</string>
+                <string>mayank</string>
+              </entry>
+              <entry>
+                <string>validEmail</string>
+                <string>BGE123_0.rulez@gmx.net</string>
+              </entry>
+              <entry>
+                <string>validPassword</string>
+                <string>password</string>
+              </entry>
+              <entry>
+                <string>login</string>
+                <string></string>
+              </entry>
+            </linked-hash-map>
+          </data>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given Bob, is a BGE customer</string>
+          <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and &lt;invalidPassword&gt;</string>
+          <string>Then Bob should see the error message as Incorrect username/password</string>
+          <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and  &lt;invalidPassword&gt;</string>
+          <string>Then Bob should see the error message as Incorrect username/password.</string>
+          <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and  &lt;validPassword&gt;</string>
+          <string>Then Bob should see the error message as Incorrect username/password.</string>
+          <string>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</string>
+          <string>Then Bob, should see the error message as Please enter your email and Please enter your password</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/Login_Logout/login.story</storyPath>
+      <allowed>true</allowed>
+      <examplePerformableScenarios>
+        <examplePerformableScenario>
+          <parameters class="linked-hash-map">
+            <entry>
+              <string>invalidEmail</string>
+              <string>mayank@bordgais.ie</string>
+            </entry>
+            <entry>
+              <string></string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>invalidPassword</string>
+              <string>mayank</string>
+            </entry>
+            <entry>
+              <string>validEmail</string>
+              <string>BGE123_0.rulez@gmx.net</string>
+            </entry>
+            <entry>
+              <string>validPassword</string>
+              <string>password</string>
+            </entry>
+            <entry>
+              <string>login</string>
+              <string></string>
+            </entry>
+          </parameters>
+          <givenStories/>
+          <beforeSteps>
+            <matches/>
+          </beforeSteps>
+          <steps>
+            <matches/>
+            <results>
+              <successful>
+                <step>Given Bob, is a BGE customer</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Given Bob, is a BGE customer</parametrisedStep>
+                <durationInMillis>2743</durationInMillis>
+              </successful>
+              <successful>
+                <step>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and &lt;invalidPassword&gt;</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When Bob, logs into his BGE account with ?mayank@bordgais.ie? and ?mayank?</parametrisedStep>
+                <durationInMillis>1533</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then Bob should see the error message as Incorrect username/password</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then Bob should see the error message as Incorrect username/password</parametrisedStep>
+                <durationInMillis>187</durationInMillis>
+              </successful>
+              <successful>
+                <step>When Bob, logs into his BGE account with &lt;validEmail&gt; and  &lt;invalidPassword&gt;</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When Bob, logs into his BGE account with ?BGE123_0.rulez@gmx.net? and  ?mayank?</parametrisedStep>
+                <durationInMillis>2657</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then Bob should see the error message as Incorrect username/password.</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then Bob should see the error message as Incorrect username/password.</parametrisedStep>
+                <durationInMillis>138</durationInMillis>
+              </successful>
+              <successful>
+                <step>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and  &lt;validPassword&gt;</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When Bob, logs into his BGE account with ?mayank@bordgais.ie? and  ?password?</parametrisedStep>
+                <durationInMillis>2851</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then Bob should see the error message as Incorrect username/password.</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then Bob should see the error message as Incorrect username/password.</parametrisedStep>
+                <durationInMillis>392</durationInMillis>
+              </successful>
+              <successful>
+                <step>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</parametrisedStep>
+                <durationInMillis>2102</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then Bob, should see the error message as Please enter your email and Please enter your password</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then Bob, should see the error message as Please enter your email and Please enter your password</parametrisedStep>
+                <durationInMillis>734</durationInMillis>
+              </successful>
+            </results>
+          </steps>
+          <afterSteps>
+            <matches/>
+          </afterSteps>
+          <storyAndScenarioMeta>
+            <properties>
+              <property name="login" value=""/>
+            </properties>
+          </storyAndScenarioMeta>
+          <scenario>
+            <title>Customer should not login to their account with incorrect credentials</title>
+            <meta>
+              <properties>
+                <property name="login" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|invalidEmail||invalidPassword||validEmail||validPassword|&#xd;
+|mayank@bordgais.ie||mayank||BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>invalidEmail</string>
+                <string></string>
+                <string>invalidPassword</string>
+                <string></string>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>invalidEmail</string>
+                    <string>mayank@bordgais.ie</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>invalidPassword</string>
+                    <string>mayank</string>
+                  </entry>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>login</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob, is a BGE customer</string>
+              <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and &lt;invalidPassword&gt;</string>
+              <string>Then Bob should see the error message as Incorrect username/password</string>
+              <string>When Bob, logs into his BGE account with &lt;validEmail&gt; and  &lt;invalidPassword&gt;</string>
+              <string>Then Bob should see the error message as Incorrect username/password.</string>
+              <string>When Bob, logs into his BGE account with &lt;invalidEmail&gt; and  &lt;validPassword&gt;</string>
+              <string>Then Bob should see the error message as Incorrect username/password.</string>
+              <string>When Bob, logs into his BGE account without providing valid credentials(empty) and click sign in</string>
+              <string>Then Bob, should see the error message as Please enter your email and Please enter your password</string>
+            </steps>
+          </scenario>
+        </examplePerformableScenario>
+      </examplePerformableScenarios>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+    <performableScenario>
+      <scenario>
+        <title>Customer logging out of their online account</title>
+        <meta>
+          <properties>
+            <property name="logout" value=""/>
+          </properties>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers>
+            <string>validEmail</string>
+            <string></string>
+            <string>validPassword</string>
+          </headers>
+          <data>
+            <linked-hash-map>
+              <entry>
+                <string>validEmail</string>
+                <string>BGE123_0.rulez@gmx.net</string>
+              </entry>
+              <entry>
+                <string></string>
+                <string></string>
+              </entry>
+              <entry>
+                <string>validPassword</string>
+                <string>password</string>
+              </entry>
+              <entry>
+                <string>logout</string>
+                <string></string>
+              </entry>
+            </linked-hash-map>
+          </data>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given Bob a customer is logged into his BGE online account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+          <string>When Bob, logs out of his BGE online account</string>
+          <string>Then Bob, is out of his Bord Gais Account</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/Login_Logout/logout.story</storyPath>
+      <allowed>true</allowed>
+      <examplePerformableScenarios>
+        <examplePerformableScenario>
+          <parameters class="linked-hash-map">
+            <entry>
+              <string>validEmail</string>
+              <string>BGE123_0.rulez@gmx.net</string>
+            </entry>
+            <entry>
+              <string></string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>validPassword</string>
+              <string>password</string>
+            </entry>
+            <entry>
+              <string>logout</string>
+              <string></string>
+            </entry>
+          </parameters>
+          <givenStories/>
+          <beforeSteps>
+            <matches/>
+          </beforeSteps>
+          <steps>
+            <matches/>
+            <results>
+              <successful>
+                <step>Given Bob a customer is logged into his BGE online account with &lt;validEmail&gt; and &lt;validPassword&gt;</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Given Bob a customer is logged into his BGE online account with ?BGE123_0.rulez@gmx.net? and ?password?</parametrisedStep>
+                <durationInMillis>18950</durationInMillis>
+              </successful>
+              <successful>
+                <step>When Bob, logs out of his BGE online account</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When Bob, logs out of his BGE online account</parametrisedStep>
+                <durationInMillis>3361</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then Bob, is out of his Bord Gais Account</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then Bob, is out of his Bord Gais Account</parametrisedStep>
+                <durationInMillis>3099</durationInMillis>
+              </successful>
+            </results>
+          </steps>
+          <afterSteps>
+            <matches/>
+          </afterSteps>
+          <storyAndScenarioMeta>
+            <properties>
+              <property name="logout" value=""/>
+            </properties>
+          </storyAndScenarioMeta>
+          <scenario>
+            <title>Customer logging out of their online account</title>
+            <meta>
+              <properties>
+                <property name="logout" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>logout</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob a customer is logged into his BGE online account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+              <string>When Bob, logs out of his BGE online account</string>
+              <string>Then Bob, is out of his Bord Gais Account</string>
+            </steps>
+          </scenario>
+        </examplePerformableScenario>
+      </examplePerformableScenarios>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+    <performableScenario>
+      <scenario>
+        <title>Customer logging out of their Bord Gais online account</title>
+        <meta>
+          <properties>
+            <property name="logout" value=""/>
+          </properties>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers>
+            <string>validEmail</string>
+            <string></string>
+            <string>validPassword</string>
+          </headers>
+          <data>
+            <linked-hash-map>
+              <entry>
+                <string>validEmail</string>
+                <string>BGE123_0.rulez@gmx.net</string>
+              </entry>
+              <entry>
+                <string></string>
+                <string></string>
+              </entry>
+              <entry>
+                <string>validPassword</string>
+                <string>password</string>
+              </entry>
+              <entry>
+                <string>logout</string>
+                <string></string>
+              </entry>
+            </linked-hash-map>
+          </data>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given Bob, logged into his account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+          <string>When Bob, logs out of his account</string>
+          <string>Then Bob, should be logged out of his BGE online account</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/Login_Logout/logout.story</storyPath>
+      <allowed>true</allowed>
+      <examplePerformableScenarios>
+        <examplePerformableScenario>
+          <parameters class="linked-hash-map">
+            <entry>
+              <string>validEmail</string>
+              <string>BGE123_0.rulez@gmx.net</string>
+            </entry>
+            <entry>
+              <string></string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>validPassword</string>
+              <string>password</string>
+            </entry>
+            <entry>
+              <string>logout</string>
+              <string></string>
+            </entry>
+          </parameters>
+          <givenStories/>
+          <beforeSteps>
+            <matches/>
+          </beforeSteps>
+          <steps>
+            <matches/>
+            <results>
+              <successful>
+                <step>Given Bob, logged into his account with &lt;validEmail&gt; and &lt;validPassword&gt;</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Given Bob, logged into his account with ?BGE123_0.rulez@gmx.net? and ?password?</parametrisedStep>
+                <durationInMillis>3116</durationInMillis>
+              </successful>
+              <successful>
+                <step>When Bob, logs out of his account</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When Bob, logs out of his account</parametrisedStep>
+                <durationInMillis>3727</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then Bob, should be logged out of his BGE online account</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then Bob, should be logged out of his BGE online account</parametrisedStep>
+                <durationInMillis>192</durationInMillis>
+              </successful>
+            </results>
+          </steps>
+          <afterSteps>
+            <matches/>
+          </afterSteps>
+          <storyAndScenarioMeta>
+            <properties>
+              <property name="logout" value=""/>
+            </properties>
+          </storyAndScenarioMeta>
+          <scenario>
+            <title>Customer logging out of their Bord Gais online account</title>
+            <meta>
+              <properties>
+                <property name="logout" value=""/>
+              </properties>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|validEmail||validPassword|&#xd;
+|BGE123_0.rulez@gmx.net||password|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>validEmail</string>
+                <string></string>
+                <string>validPassword</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>validEmail</string>
+                    <string>BGE123_0.rulez@gmx.net</string>
+                  </entry>
+                  <entry>
+                    <string></string>
+                    <string></string>
+                  </entry>
+                  <entry>
+                    <string>validPassword</string>
+                    <string>password</string>
+                  </entry>
+                  <entry>
+                    <string>logout</string>
+                    <string></string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given Bob, logged into his account with &lt;validEmail&gt; and &lt;validPassword&gt;</string>
+              <string>When Bob, logs out of his account</string>
+              <string>Then Bob, should be logged out of his BGE online account</string>
+            </steps>
+          </scenario>
+        </examplePerformableScenario>
+      </examplePerformableScenarios>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+  </scenarios>
+</xref>

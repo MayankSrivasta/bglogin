@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Logout","Customer logging out of their Bord Gais online account","SUCCESS","2018-10-04T11:48:33.637+05:30","0.0","8.24"
+"Logout","Customer logging out of their online account","SUCCESS","2018-10-04T11:48:06.994+05:30","0.0","26.63"
+"Login","Customer login into his account with valid credentials","SUCCESS","2018-10-04T11:47:17.161+05:30","0.0","31.32"
+"Login","Customer should not login to their account with incorrect credentials","SUCCESS","2018-10-04T11:47:48.748+05:30","0.0","16.79"

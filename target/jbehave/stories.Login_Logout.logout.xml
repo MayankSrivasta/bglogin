@@ -1,0 +1,34 @@
+<story path="stories/Login_Logout/logout.story" title="">
+<scenario keyword="Scenario:" title="Customer logging out of their online account">
+<examples keyword="Examples:">
+<step>Given Bob a customer is logged into his BGE online account with &lt;validEmail&gt; and &lt;validPassword&gt;</step>
+<step>When Bob, logs out of his BGE online account</step>
+<step>Then Bob, is out of his Bord Gais Account</step>
+<parameters>
+<names><name>validEmail</name><name></name><name>validPassword</name></names>
+<values><value>BGE123_0.rulez@gmx.net</value><value></value><value>password</value></values>
+</parameters>
+
+<example keyword="Example:">{validEmail=BGE123_0.rulez@gmx.net, =, validPassword=password, logout=}</example>
+<step outcome="successful">Given Bob a customer is logged into his BGE online account with <parameter>BGE123_0.rulez@gmx.net</parameter> and <parameter>password</parameter></step>
+<step outcome="successful">When Bob, logs out of his BGE online account</step>
+<step outcome="successful">Then Bob, is out of his Bord Gais Account</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="Customer logging out of their Bord Gais online account">
+<examples keyword="Examples:">
+<step>Given Bob, logged into his account with &lt;validEmail&gt; and &lt;validPassword&gt;</step>
+<step>When Bob, logs out of his account</step>
+<step>Then Bob, should be logged out of his BGE online account</step>
+<parameters>
+<names><name>validEmail</name><name></name><name>validPassword</name></names>
+<values><value>BGE123_0.rulez@gmx.net</value><value></value><value>password</value></values>
+</parameters>
+
+<example keyword="Example:">{validEmail=BGE123_0.rulez@gmx.net, =, validPassword=password, logout=}</example>
+<step outcome="successful">Given Bob, logged into his account with <parameter>BGE123_0.rulez@gmx.net</parameter> and <parameter>password</parameter></step>
+<step outcome="successful">When Bob, logs out of his account</step>
+<step outcome="successful">Then Bob, should be logged out of his BGE online account</step>
+</examples>
+</scenario>
+</story>

@@ -1,0 +1,6 @@
+com\serenity\BordGais\storySteps\Logout.class
+com\serenity\BordGais\GoogleSearch.class
+com\serenity\BordGais\userSteps\LogoutUserStepFile.class
+com\serenity\BordGais\pageObject\ProjectPageObject.class
+com\serenity\BordGais\userSteps\LoginUserStepFile.class
+com\serenity\BordGais\storySteps\Login.class

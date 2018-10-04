@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login","Customer login into his account with valid credentials","SUCCESS","2018-10-04T11:47:17.161+05:30","0.0","31.32"
+"Login","Customer should not login to their account with incorrect credentials","SUCCESS","2018-10-04T11:47:48.748+05:30","0.0","16.79"
